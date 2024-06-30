@@ -236,7 +236,7 @@ double *wave_this_osc(Base_osc *syn, double tsize, double bsize) {
             }
             
             for(int i = 0; i < n; i++){
-                double harm = inH[i]; //putting the frequency in f from the input inlet
+                double harm = inH[i]; //putting the harmonics in h from the input inlet
                 if (harm != 0.0) {
                     x->osc.h = harm;
                 }
