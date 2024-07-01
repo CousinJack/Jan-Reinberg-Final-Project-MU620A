@@ -138,7 +138,7 @@ double *wave_this_osc(t_tosc *syn, double tsize, double bsize) {
                     //checks string input from message inlet and iterates through the harmonics depending on the value,
                     x->tab[i] += sin(TWOPI * x->frq * j * time)/j; //if left as "none" then loops through all the harmonics
                 }
-                    x->tab[i] *= x->amp;
+                    x->tab[i] *= x->amp; //scaling table output
                 
             }
             return (x);
@@ -240,5 +240,4 @@ double *wave_this_osc(t_tosc *syn, double tsize, double bsize) {
     }
 
 
-                     
-
+            
