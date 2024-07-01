@@ -25,7 +25,7 @@
 
     
  Instructions for this build are very similar to those of the general max-sdk for MacOS.
- You will need to use the following terminal commands for the initial parts:
+ You will need to use the following terminal commands for the initial portion of the process:
  
  1. First, you will need to clone the repository to your system:
     git clone https://github.com/Cycling74/max-sdk.git
