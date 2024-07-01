@@ -94,7 +94,7 @@ double *wave_this_osc(t_tosc *syn, double tsize, double bsize) {
     //where main initialization of the t_tosc parameters are.  Including memory allocation
     void *simplemsp_new(t_symbol *s, long argc, t_atom *argv)
     {
-        t_tosc *x = (t_tosc *)object_alloc(tosc_class);
+        t_tosc *x = (t_tosc *)object_alloc(tosc_class); //allocating memory for osc pointer
         
         if (x) {
             
@@ -109,7 +109,7 @@ double *wave_this_osc(t_tosc *syn, double tsize, double bsize) {
             x->ph = 0.0; //setting the inital phase here which can be manipulated with 0.0 to 1.0 input inlet
             x->frq = 440.; //default frequency
             x->amp = 0.5;
-            x->sr = sys_getsr();  //getting sample rate from the system
+            x->sr = sys_getsr();  //gets sample rate from the system 
             
             x->process = wave_this_osc; //process using the wave_synth function
             
