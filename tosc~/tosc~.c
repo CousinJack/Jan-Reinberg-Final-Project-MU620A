@@ -1,7 +1,7 @@
 
  
 
- 
+ //tosc~ a wavetable oscillator that can be controlled via two inlets for frequency and harmonics.
  
  #include "ext.h"            // standard Max include, always required (except in Jitter)
  #include "ext_obex.h"        // required for "new" style objects
@@ -43,7 +43,7 @@ double *wave_this_osc(Base_osc *syn, double tsize, double bsize) {
         }
         syn->sig[i] = 0.5 * syn->tab[ind];
         syn->ph += syn->frq / syn->sr;
-        while (syn->ph >= 1.0) {   //ensuring wrapping the phase.  Initially had table size but had to resort to 0 to 1.
+        while (syn->ph >= 1.0) {   //ensuring wrapping the phase.
             syn->ph -= 1.0;
             {
         while (syn->ph < 0) {
