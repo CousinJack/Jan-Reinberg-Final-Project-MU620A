@@ -49,7 +49,7 @@
  13. After the build is successful, you will go into the max-sdk folder and search for the externals folder that appeared.
  14. There should be a tosc~.mxo file, this is the file you will need to put in your external folder of your Max application source folder.
  15. The path to the proper folder in Max should: 
-    Max (applicatio) -> Contents -> Resources -> C74 -> externals -> msp
+    Max (right-click application) -> Contents -> Resources -> C74 -> externals -> msp
  16. Move or copy and paste the tosc~.mxo file into this 'msp' folder
  17. Now when you go into Max, and search for the object, it should appear.
  
